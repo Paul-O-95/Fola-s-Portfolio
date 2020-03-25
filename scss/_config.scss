@@ -1,0 +1,15 @@
+$dark-color:#171717;
+$font-stack: Arial, Helvetica, sans-serif;
+$light-color:#f4f4f4;
+$primary-color:#f32b46;
+// #secondary-color:
+
+
+// Set light/dark mode
+@function light-mode($color){
+    @if(lightness($color) > 70){
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}

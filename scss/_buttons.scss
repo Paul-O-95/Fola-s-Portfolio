@@ -1,0 +1,20 @@
+button{
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 11rem;
+    padding: 0.3rem;
+    background-color: #f32b46;
+    border-radius: 1.0rem;
+    &:hover{
+        transform:scale(.98)
+    }
+}
+
+
+@media only screen and (min-width:961px){
+    button{
+        margin-left: 70rem;
+        padding: 1.0rem;
+    }
+}

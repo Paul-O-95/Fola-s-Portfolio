@@ -1,0 +1,167 @@
+@import 'config';
+@import 'buttons';
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body{
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+    border-radius: 2rem;
+}
+
+.main-wrapper{
+    background-color: lighten($dark-color, 1%);
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.mini-wrapper{
+    background-color: $dark-color;
+    margin: .5rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    box-shadow:3px 3px 5px 6px ; 
+    height: 30rem;
+}
+
+
+#nav-bar{
+    display: inline-block;
+    padding-left: 1em;
+
+    a{
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 17px;
+        padding-right: 0.5em;
+        cursor: pointer;
+    }
+
+    a:hover{
+        color: $light-color;
+    }
+}
+
+.social{
+    display: none;
+    font-size: 2rem;
+}
+
+#single{
+    color: $primary-color;
+}
+
+.banner{
+    color: white;
+    margin-top: 6rem;
+
+    h1,
+    #fola{
+        padding-left: 12rem;
+    }
+    
+}
+
+.showcase{
+    display: flex;
+}
+
+.developer{
+    margin-top: -5.3rem;
+
+    hr{
+     width: 12rem;
+ }
+
+    #web{
+        color: $primary-color;
+        text-transform: capitalize;
+        padding-left: 5rem;
+    }
+
+    #devops{
+        color: $light-color;
+        text-transform: capitalize;
+        padding-left: 5rem;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width:961px){
+   .main-wrapper{
+       height: 100vh;
+   }
+
+   .showcase{
+       display: flex;
+   }
+
+   .mini-wrapper{
+       height: 93vh;
+   }
+
+   .banner{
+       h1,
+       #fola{
+           padding-left: 65rem;
+           font-size: 5rem;
+       }
+
+       p{
+           padding-left: 25rem;
+           font-size: 2rem;
+       }
+   }
+
+   #nav-bar{
+       padding-right: 5rem;
+
+       a{
+        padding-left: 2rem;
+       }
+   }
+
+   .social{
+       padding-left:40rem;
+       display: inline-block;
+   }
+
+   i{
+       color: $primary-color;
+       padding-left: 2rem;
+   }
+
+   i:hover{
+       color: $light-color;
+   }
+
+   .developer{
+       margin-top: -11rem;
+
+       hr{
+        width: 65rem;
+    }
+
+    #web{
+        padding-left: 25rem;
+    }
+
+    #devops{
+        padding-left: 25rem;
+    }
+   }
+}
