@@ -53,6 +53,19 @@ body{
     }
 }
 
+.active{
+    border-bottom: 3px solid $light-color;
+    width: 4rem;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: #ef7f9a;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
 .social{
     display: none;
     font-size: 2rem;
@@ -101,7 +114,7 @@ body{
 
 
 
-@media only screen and (min-width:961px){
+@media only screen and (min-width: 1025px){
    .main-wrapper{
        height: 100vh;
    }
@@ -165,3 +178,9 @@ body{
     }
    }
 }
+
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+    body {
+      background: #ccc;
+    }
+  }
