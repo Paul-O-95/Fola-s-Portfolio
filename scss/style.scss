@@ -144,37 +144,35 @@ body{
     color: $light-color;
     margin: 0 auto;
     text-align: center;
-
     h2{
         color: $primary-color;
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     p,h2{
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
 
 input,textarea{
-    width:30%;
-    height: 3rem;
-    padding: 16px 20px;
+    width:80%;
+    height: 2rem;
+    padding: 12px 10px;
     color: #3a478d;
     border-radius: 4px;
     margin: 8px 0;
     margin-top: 0;
     margin-bottom: 2rem;
-    font-family: 'Bellota Text', cursive;
 }
 
 textarea{
-    height: 10rem;
+    height: 6rem;
 }
 
 
 
 
-@media only screen and (min-width: 1366px){
+@media only screen and (min-width: 961px){
     .showcase{
        display: flex;
    }
@@ -233,7 +231,48 @@ textarea{
         padding-left: 25rem;
     }
    }
+
+   // Contact styling
+    .contact-div{
+    color: $light-color;
+    margin: 0 auto;
+    text-align: center;
+
+    h2{
+        color: $primary-color;
+        margin-top: 3rem;
+    }
+
+    p,h2{
+        font-size: 2rem;
+    }
 }
+
+    input,textarea{
+    width:30%;
+    height: 3rem;
+    padding: 16px 20px;
+
+}
+
+    textarea{
+    height: 10rem;
+}
+
+//About
+    .about-me{
+    margin: 2rem;
+    color: $light-color;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+    .about{
+        flex: 0 0 48%;;
+    }
+
+}
+
 
 @media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
     body {

@@ -13,7 +13,8 @@ button{
 }
 
 #submit-button{
-    margin-left: 4rem;
+    margin-left: 1rem;
+    margin-top: -10rem;
 }
 
 
@@ -21,5 +22,9 @@ button{
     button{
         margin-left: 70rem;
         padding: 1.0rem;
+    }
+
+    #submit-button{
+        margin-left: 4rem;
     }
 }
