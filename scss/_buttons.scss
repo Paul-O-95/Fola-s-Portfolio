@@ -1,30 +1,30 @@
-button{
-    display: inline-block;
-    text-align: center;
-    color: white;
-    margin-top: 1rem;
-    margin-left: 11rem;
-    padding: 0.3rem;
-    background-color: #f32b46;
-    border-radius: 1.0rem;
-    &:hover{
-        transform:scale(.98)
-    }
+button {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+  margin-left: 11rem;
+  padding: 0.3rem;
+  background-color: #f32b46;
+  border: none;
+  border-radius: 1rem;
+  &:hover {
+    transform: scale(0.98);
+  }
 }
 
-#submit-button{
-    margin-left: 1rem;
-    margin-top: -10rem;
+#submit-button {
+  margin-left: 1rem;
+  margin-top: -10rem;
 }
 
+@media only screen and (min-width: 961px) {
+  button {
+    margin-left: 70rem;
+    padding: 1rem;
+  }
 
-@media only screen and (min-width:961px){
-    button{
-        margin-left: 70rem;
-        padding: 1.0rem;
-    }
-
-    #submit-button{
-        margin-left: 4rem;
-    }
+  #submit-button {
+    margin-left: 4rem;
+  }
 }
