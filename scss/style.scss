@@ -7,6 +7,18 @@
     padding: 0;
 }
 
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+
 *:focus {
     outline: none;
 }
@@ -86,6 +98,22 @@ body{
     
 }
 
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.projects{
+    display: flex;
+}
+
+.projects{
+    flex: 0 0 20%;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
+
+
 .showcase{
     display: flex;
 }
@@ -111,15 +139,43 @@ body{
 
 }
 
+// Contact styling
+.contact-div{
+    color: $light-color;
+    margin: 0 auto;
+    text-align: center;
+
+    h2{
+        color: $primary-color;
+        margin-top: 3rem;
+    }
+
+    p,h2{
+        font-size: 2rem;
+    }
+}
+
+input,textarea{
+    width:30%;
+    height: 3rem;
+    padding: 16px 20px;
+    color: #3a478d;
+    border-radius: 4px;
+    margin: 8px 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-family: 'Bellota Text', cursive;
+}
+
+textarea{
+    height: 10rem;
+}
+
 
 
 
 @media only screen and (min-width: 1366px){
-   .main-wrapper{
-    //    height: 100vh;
-   }
-
-   .showcase{
+    .showcase{
        display: flex;
    }
 
